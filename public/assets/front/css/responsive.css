@@ -1,0 +1,596 @@
+/* Medium Layout: 1200px. */
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .navbar-area .navbar-collapse .navbar-nav .nav-item {
+        display: inline-block;
+        font-size: 14px;
+        line-height: 45px;
+        text-transform: uppercase;
+        font-weight: 700;
+        padding: 20px 10px;
+        position: relative;
+    }
+    .about-us-aera .right-content-area .title {
+        margin-top: 0;
+    }
+    .about-us-aera .single-about-box {
+        height: 300px;
+    }
+    .practise-area .single-practise-box .content .title {
+        font-size: 25px;
+    }
+    .our-attorney-area .single-attorney-box .thumb:before {
+        left: -86px;
+    }
+    .our-attorney-area .single-attorney-box .thumb:after {
+        right: -86px;
+    }
+    .single-faq-area img {
+        width: 100%;
+    }
+    .call-to-action .call-to-action-inner {
+        text-align: center;
+    }
+    .call-to-action .call-to-action-inner .right-content-area {
+        float: none;
+    }
+    .call-to-action .call-to-action-inner .bg-icon {
+        top: 50px;
+    }
+    .footer_widget {
+        margin-bottom: 40px;
+    }
+    .footer-area {
+        padding-bottom: 55px;
+    }
+    .rmb-30 {
+        margin-bottom: 30px;
+    }
+}
+
+/* Tablet Layout: 768px. */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .nav>li>a {
+        position: relative;
+        display: block;
+        padding: 10px 6px;
+    }
+    .support-bar-area .logo {
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .support-bar-area .support-bar-content ul li {
+        display: inline-block;
+    }
+    .rmb-30 {
+        margin-bottom: 30px;
+    }
+    .rmb-35 {
+        margin-bottom: 35px;
+    }
+    .rmb-40 {
+        margin-bottom: 40px;
+    }
+    .rmt-30 {
+        margin-top: 30px !important;
+    }
+    .support-bar-area .support-bar-content {
+        text-align: center;
+    }
+    .navbar-area .navbar-collapse .navbar-nav .nav-item {
+        display: inline-block;
+        font-size: 13px;
+        line-height: 45px;
+        text-transform: uppercase;
+        font-weight: 700;
+        padding: 20px 5px;
+        position: relative;
+    }
+    .about-us-aera .left-content-area .thumb img {
+        width: 100%;
+    }
+    .call-to-action .call-to-action-inner {
+        text-align: center;
+    }
+    .call-to-action .call-to-action-inner .right-content-area {
+        float: none;
+    }
+    .call-to-action .call-to-action-inner .bg-icon {
+        top: 50px;
+    }
+    .call-to-action .call-to-action-inner .left-content .title {
+        line-height: 38px;
+        max-width: 85%;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+    .col-clear{
+        clear: none;
+    }
+    .col-mclear{
+        display: block;
+        clear: both;
+    }
+    .about-us-aera.home-2 .left-content-area{
+        margin-bottom: 60px;
+    }
+    .our-attorney-area .single-attorney-box .thumb:after,
+    .our-attorney-area .single-attorney-box .thumb:before {
+        bottom: -2px;
+    }
+    
+}
+
+/* Tablet Layout wide: 768px. */
+
+@media only screen and (max-width: 767px) {
+    .navbar-area .navbar-collapse {
+        position: absolute;
+        top: 80px;
+        background: #040A2C;
+        z-index: 9;
+        right: 0;
+        width: 250px;
+        padding-left: 20px;
+    }
+    .navbar-area .navbar-collapse .navbar-nav .nav-item .dropdown-menu.show {
+        border: 0;
+    }
+    .navbar-area.navbar.navbar-light .navbar-toggler {
+        background: #fff;
+    }
+    .navbar-area .navbar-collapse .navbar-nav .nav-item .nav-link.pl-0 {
+        padding-left: 0.4rem !important;
+    }
+    .navbar-area .navbar-collapse .navbar-nav .nav-item {
+        padding: 0;
+    }
+    .navbar-area .navbar-collapse .navbar-nav .nav-item .dropdown-menu.show .dropdown-item {
+        color: #fff;
+    }
+    .navbar-area .navbar-collapse .navbar-nav .nav-item.dropdown.dropdown .dropdown-menu li a{
+        color: #fff;
+    }
+    .navbar-area .navbar-collapse .navbar-nav .nav-item:hover .nav-link:after,
+    .navbar-area .navbar-collapse .navbar-nav .nav-item .nav-link:after {
+        display: none;
+    }
+    .dropdown-item {
+        background: #040A2C;
+        color: #fff;
+        border: 0;
+    }
+    .support-bar-area .logo {
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .support-bar-area .support-bar-content ul li {
+        display: none;
+    }
+    .navbar-area {
+        height: 80px;
+        padding: 17px 0;
+    }
+    .navbar-area .navbar-collapse .navbar-nav .nav-item {
+        display: block;
+        width: 160px;
+    }
+    .navbar-area .navbar-collapse .navbar-nav {
+        padding: 20px 0;
+    }
+    
+    .map-wrapper #map {
+        height: 400px;
+    }
+    .disable-desktop {
+        display: inline-block;
+    }
+
+    .mobile-logo-wrapper {
+        padding-left: 30px;
+    }
+    .logo.boxed-btn{
+        background-color: #D48C05;
+        border-radius: 5px;
+        margin-top: -2px;
+    }
+    .about-us-aera .left-content-area .thumb img {
+        width: 100%;
+    }
+
+    .call-to-action .call-to-action-inner {
+        text-align: center;
+    }
+
+    .call-to-action .call-to-action-inner .right-content-area {
+        float: none;
+    }
+
+    .call-to-action .call-to-action-inner .bg-icon {
+        top: 50px;
+    }
+
+    .call-to-action .call-to-action-inner .left-content .title {
+        line-height: 38px;
+        max-width: 85%;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+    .rmb-30 {
+        margin-bottom: 30px;
+    }
+
+    .rmb-35 {
+        margin-bottom: 35px;
+    }
+
+    .rmb-40 {
+        margin-bottom: 40px;
+    }
+
+    .rmt-30 {
+        margin-top: 30px !important;
+    }
+    .col-clear {
+        clear: none;
+    }
+
+    .col-mclear {
+        display: block;
+        clear: both;
+    }
+    .navbar-area .navbar-collapse .navbar-nav .nav-item.dropdown.dropdown .dropdown-menu li a:hover{
+        background-color: transparent;
+        color: #D48C05
+    }
+    .about-us-aera.home-2 .left-content-area {
+        margin-bottom: 60px;
+    }
+    .contact-form-wrapper {
+        padding: 0 15px;
+    }
+    .single-attorney-box {
+        max-width: 350px;
+        margin: 0 auto;
+        margin-bottom: 40px;
+    }
+
+    .our-attorney-area {
+        padding-bottom: 200px;
+    }
+    .single-new-feed-item {
+        display: block;
+        max-width: 350px;
+        margin: 0 auto;
+    }
+    .single-new-feed-item .content {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .news-feed-area {
+        padding-bottom: 75px;
+    }
+    .single-faq-area img {
+        width: 100%;
+        margin-bottom: 30px;
+
+    }
+    .our-attorney-area .single-attorney-box .thumb:after,
+    .our-attorney-area .single-attorney-box .thumb:before{
+        bottom: -2px;
+    }
+    .footer_widget {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .footer-area {
+        padding-bottom: 40px;
+    }
+    .faq-area {
+        padding-bottom: 80px;
+    }
+    .about-us-aera .single-about-box{
+        height: 240px;
+    }
+    .practise-area .single-practise-box {
+        margin-bottom: 80px;
+    }
+    .practise-area {
+        padding-bottom: 50px;
+    }
+    .rrmt-30 {
+        margin-top: 30px !important;
+    }
+    .faq-area .section-title {
+        margin-bottom: 30px;
+    }
+    .support-bar-area {
+        display: none;
+    }
+    .navbar-area,
+    .navbar-area.nav-fixed,
+    .navbar-area .navbar-collapse,
+    .navbar-area .navbar-collapse .navbar-nav .nav-item.dropdown.dropdown .dropdown-menu {
+        background-color: #eaf1fa;
+    }
+    .navbar-area .navbar-collapse .navbar-nav .nav-item .nav-link,
+    .navbar-area .navbar-collapse .navbar-nav .nav-item.dropdown.dropdown .dropdown-menu li a {
+        color: #040a2c;
+    }
+    .about-us-aera .single-about-box{
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .blog-details-content .single-blog-post .meta-time {
+        position: initial;
+    }
+
+    .blog-details-content .single-blog-post .details-container {
+        padding-left: 0;
+    }
+}
+
+/* medium tablet layout 599px */
+
+@media only screen and (max-width: 600px) {
+    .about-us-aera .single-about-box {
+        height: 290px;
+    }
+    .practise-area .single-practise-box .content .title {
+        font-size: 22px;
+    }
+    .topbar-bar .topbar-inner {
+        text-align: center;
+    }
+
+    .topbar-bar .topbar-inner .topbar-right-content {
+        float: none;
+        margin-top: 10px;
+    }
+    .rrmb-80{
+        margin-bottom: 80px !important;
+    }
+    .practise-area .single-practise-box {
+        margin-bottom: 80px;
+    }
+
+    .practise-area {
+        padding-bottom: 40px;
+    }
+    .rrmt-30 {
+        margin-top: 30px !important;
+    }
+    .rrmb-30 {
+        margin-top: 30px !important;
+    }
+    .single-thumb {
+        margin-right: 15px;
+    }
+    .happy-clients-area .brand-carousel .single-brand-logo {
+        margin-left: 45px;
+    }
+    .call-to-action .call-to-action-inner .left-content .title {
+        max-width: 100%;
+    }
+    .support-bar-area .logo {
+        margin-top: 15px;
+    }
+    .blog-details-content .single-blog-post .meta-time {
+        position: initial;
+    }
+
+    .blog-details-content .single-blog-post .details-container {
+        padding-left: 0;
+    }
+    
+}
+
+/* mobile tablet layout 414px */
+
+@media only screen and (max-width: 414px) {
+    .header-man{
+        padding: 8px 0px;
+       font-size: 30px;
+       
+   }   
+   .mehader-text{
+    padding: 20px 0px;
+     line-height: 30px; 
+        font-size:20px;
+        width:300px
+    }
+  .s-card{
+      margin-top: 10px;
+  }
+    .about-us-aera .single-about-box {
+        margin: 0 15px;
+        margin-bottom: 30px;
+    }
+
+    .header-bottom-wrapper {
+        margin-bottom: 80px;
+    }
+
+    .rrmt-40 {
+        margin-top: 40px !important;
+    }
+    .counter-and-subscribe-area .subscribe-outer-wrapper .subscribe-form-wrapper .submit-btn {
+        position: initial;
+        float: none;
+        margin-top: 20px;
+        height: 55px;
+        line-height: 55px;
+        width: 160px;
+        display: block;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+    .counter-and-subscribe-area .subscribe-outer-wrapper .title {
+        font-size: 42px;
+        line-height: 50px;
+    }
+    .rrmt-30 {
+        margin-top: 30px !important;
+    }
+
+    .rrmb-30 {
+        margin-top: 30px !important;
+    }
+    .rrmb-40 {
+        margin-top: 40px !important;
+    }
+
+    .blog-details-content .single-blog-post .meta-time {
+        position: initial;
+    }
+
+    .blog-details-content .single-blog-post .details-container {
+        padding-left: 0;
+    }
+    
+}
+
+/* mobile tablet layout 375px */
+
+@media only screen and (max-width: 384px) {
+   .happy-clients-area .brand-carousel .single-brand-logo {
+       margin-left: 30px;
+   }
+}
+
+/* mobile tablet layout 360px */
+
+@media only screen and (max-width: 360px) {
+    .header-area .header-inner .single-slider-item .header-list li {
+        margin: 0 10px;
+    }
+    .header-area .header-inner .single-slider-item .title {
+        font-size: 50px;
+        line-height: 60px;
+    }
+    .header-area .header-inner .single-slider-item .btn-wrapper .boxed-btn {
+        width: 140px;
+    }
+    .header-area .header-inner .single-slider-item {
+        padding: 120px 0 180px 0;
+    }
+    .our-attorney-area .single-attorney-box .thumb:after {
+        right: -108px;
+        bottom: -1px;
+        width: 55%;
+    }
+    .our-attorney-area .single-attorney-box .thumb:before {
+        left: -110px;
+        bottom: -2px;
+        width: 55%;
+    }
+    .call-to-action .call-to-action-inner .left-content .title {
+        font-size: 25px;
+    }
+    .happy-clients-area .brand-carousel .single-brand-logo {
+        margin-left: 20px;
+ 
+    }
+    .blog-details-content .single-blog-post .meta-time {
+        position: initial;
+    }
+
+    .blog-details-content .single-blog-post .details-container {
+        padding-left: 0;
+    }
+}
+
+/* mobile tablet layout 320px */
+
+@media only screen and (max-width: 320px) {
+    .happy-clients-area .brand-carousel .single-brand-logo {
+        margin-left: 0px;
+    }
+    .header-area .header-inner .single-slider-item .header-list li {
+        margin: 0px 5px;
+    }
+    .header-area .header-inner .single-slider-item .title {
+        font-size: 45px;
+        line-height: 55px;
+    }
+    .header-area .header-inner .single-slider-item .btn-wrapper .boxed-btn {
+        width: 200px;
+    }
+    .header-area .header-inner .single-slider-item .btn-wrapper .boxed-btn:last-child {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    .counter-and-subscribe-area .subscribe-outer-wrapper .title {
+        font-size: 35px;
+        line-height: 45px;
+    }
+    .faq-area .section-title {
+        margin-bottom: 30px;
+        font-size: 28px;
+    }
+    .news-feed-area .single-new-feed-item .content .title {
+        font-size: 24px;
+    }
+	.our-attorney-area .single-attorney-box .thumb:before {
+		left: -100px;
+		bottom: -2px;
+		width: 55%;
+	}
+	.our-attorney-area .single-attorney-box .thumb:after {
+		right: -100px;
+		bottom: -1px;
+		width: 55%;
+	}
+
+    .blog-details-content .single-blog-post .meta-time {
+        position: initial;
+    }
+    .blog-details-content .single-blog-post .details-container {
+        padding-left: 0;
+    }
+    .blog-details-content .single-blog-post .details-container .post-body .post-bottom-content .bottom-content .left-content ul li {
+        display: inline-block;
+        border: 2px solid rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        -webkit-transition: all 0.3s ease-in;
+        -moz-transition: all 0.3s ease-in;
+        -o-transition: all 0.3s ease-in;
+        transition: all 0.3s ease-in;
+        margin: 0 4px;
+    }
+    .btn-top-320 {
+        float: none !important;
+    }
+    .btn-bottom-10{
+        margin-bottom: 10px !important;
+    }
+    .our-attorney-area{
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    .about-us-aera {
+        padding: 110px 0 30px 0;
+    }
+    .about-us-aera .single-about-box .content .title {
+        font-size: 16px;
+        font-weight: 700;
+        color: #040a2c;
+        -webkit-transition: all 0.3s ease-in;
+        -moz-transition: all 0.3s ease-in;
+        -o-transition: all 0.3s ease-in;
+        transition: all 0.3s ease-in;
+    }
+    .nav>li>a {
+        position: relative;
+        display: block;
+        padding: 10px 10px;
+    }
+    h2.title strong {
+        font-size: 20px;
+    }
+}

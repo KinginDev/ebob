@@ -1,0 +1,240 @@
+.support-bar-area .support-bar-content ul li {
+    max-width: 300px;
+}
+
+.contact-info-min-height{
+    min-height: 300px;
+}
+.nicEdit-main *{
+    color: #777777 !important;
+    line-height: 26px;
+}
+.faq-area {
+    background-color: #fff;
+}
+.faq-area .section-title {
+    color: #11294d;
+}
+
+.faq-area .accordion-wrapper .panel .panel-heading .panel-title a {
+    border: 2px solid #E49600;
+    width: 100%;
+    display: block;
+    font-size: 20px;
+    line-height: 20px;
+     color: #11294d;
+    padding: 18px 30px;
+    position: relative;
+    padding-left: 90px;
+}
+
+.breadcrumb-area .nav-text .current-page {
+    color: #e49600;
+    font-size: 30px;
+    text-transform: capitalize;
+}
+.breadcrumb-area .nav-text a {
+    color: #e49600;
+    font-size: 30px;
+}
+.breadcrumb-area .nav-text {
+    color: #e49600;
+    font-size: 30px;
+}
+.about-us-aera {
+    padding: 110px 0 50px 0;
+}
+
+
+ .post-navigation {
+     margin-top: 55px;
+ }
+
+.post-navigation .pagination li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.post-navigation .pagination li.active a, .post-navigation .pagination .dashboard-nav .left-content-area .nav.nav-tabs li.nav-item.nav-link:hover a, .dashboard-nav .left-content-area .nav.nav-tabs .post-navigation .pagination li.nav-item.nav-link:hover a {
+    background-color: #fff;
+    border: 2px solid #e49600;
+    color: #e49600;
+}
+
+.post-navigation .pagination li:first-child {
+    margin-left: 0;
+}
+
+.post-navigation .pagination li a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 6px;
+    line-height: 30px;
+    text-align: center;
+    color: #fff;
+    background-color: #e49600;
+    font-weight: 700;
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+}
+
+.post-navigation .pagination li a:hover {
+    background-color: #fff;
+    color: #e49600;
+    border: 2px solid #e49600;
+}
+
+
+
+.max-width-80{
+    max-width: 80px;
+}
+.mt-15{
+    margin-top: 15px;
+}
+.error{
+    color: #ff3133;
+}
+.name{
+    color: #fff;
+    font-weight: bold;
+}
+.white{
+    color: #fff;
+}
+.panel-custom{
+    border-color: #040A2C;
+}
+.panel-custom>.panel-heading {
+    color: #fff;
+    background-color: #040A2C;
+    border-color: #040A2C;
+}
+.custom-sbtn{
+    background-color: #040a2c;
+    border: 1px solid #040a2c;
+}
+.custom-sbtn:hover,
+.custom-sbtn:active,
+.custom-sbtn:focus
+{
+    background-color: #e49600 !important;
+    border: 1px solid #e49600 !important;
+}
+.modal-msg-heading{font-size: 14px ;}
+.modal-msg{font-size: 12px ;}
+
+.btn-border{
+    border: 1px solid #e49600 !important;
+}
+body.modal-open{
+    padding-right: 0 !important;
+}
+
+.green{
+    color: #27ae60;
+}
+.red{
+    color: #ff3133;
+}
+
+
+
+/*Notification Bar*/
+.notification-wrapper .icon {
+    position: relative;
+    display: inline-block;
+}
+
+.notification-wrapper .icon .badge__ {
+    position: absolute;
+    right: -8px;
+    top: -8px;
+    width: 20px;
+    height: 20px;
+    background-color: #6e9c68;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 20px;
+}
+
+.notification-wrapper {
+    display: inline-block;
+    position: relative;
+}
+
+.notification-wrapper .dropdown-notification {
+    position: absolute;
+    right: 0;
+    top: 38px;
+    width: 250px;
+    background-color: #eaeaea;
+    color: #525252;
+    z-index: 999999;
+    transition: .3s ease-in;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.single-notification:hover{
+    background-color: rgba(19,28,36,.50);
+}
+.single-notification:hover .title{
+    color: #f0f6fa;
+}
+.view_more_notification .single-notification {
+    background-color: #6e9c68;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 2px;
+    transition: .3s ease-in;
+}
+.view_more_notification .single-notification:hover{
+    background-color: #242424;
+}
+.single-notification .title {
+    font-size: 14px;
+    font-weight: 500;
+    color: #515151;
+}
+
+.single-notification {
+    background-color: #f7f7f7;
+    margin-bottom: 5px;
+    padding: 10px 20px;
+    text-align: left;
+    transition: .3s ease-in;
+    padding-bottom: 13px;
+}
+.dropdown-notification ul li > a {
+    padding-right: 0;
+}
+.notification-wrapper .dropdown-notification ul li:last-child a .single-notification {
+    margin-bottom: 0;
+}
+.single-notification-item {
+    cursor: pointer;
+    display: inline-block;
+    margin: 0 15px;
+}
+.notification-wrapper .icon i {
+    font-size: 20px;
+    color: #fff;
+}
+.sent-from {
+    font-size: 10px;
+    padding: 5px 0px;
+}
+.single-notification-item .text__ {
+    display:  inline-block;
+    margin-left: 5px;
+}
