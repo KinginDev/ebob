@@ -93,6 +93,7 @@ Route::group(['prefix' => 'user'], function () {
         Route::post('create-milestone','HomeController@getMileStone')->name('get.mileStone');
         Route::post('release-amount', 'HomeController@releaseAmount')->name('release.amount');
         Route::post('reject-amount', 'HomeController@rejectAmount')->name('reject.amount');
+        Route::post('accept-amount', 'HomeController@acceptAmount')->name('accept.amount');
 
         Route::post('user-report', 'HomeController@userReport')->name('user.report');
 
@@ -291,6 +292,8 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth:admin'], function () {
     Route::get('/deposit/change/status/{id}' , 'DepositController@changeStatus')->name('admin.deposit.change.status');
     Route::resource('cards','CardController');
     Route::get('manage-breadcrumbs','AdminController@showBreadcrumbs')->name('show.breadcrumbs');
+
+    Route::resource('/escrows','Admin\EscrowController');
    
 });
 

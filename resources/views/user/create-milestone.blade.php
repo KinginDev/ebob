@@ -38,7 +38,7 @@
                                                     <label><strong class="text-uppercase">Escrow Amount:</strong></label>
                                                     <div class="input-group">
                                                     <input type="text" name="amount" class="input-field"
-                                                           placeholder="Enter Amount ">
+                                                           placeholder="Enter Amount " value="{{old('amount')}}">
 
                                                         <span class="input-group-addon">{{$basic->currency}}</span>
                                                     </div>
@@ -54,7 +54,7 @@
                                                 <div class="form-element margin-bottom-30">
                                                     <label><strong class="text-uppercase">Escrow Title:</strong></label>
                                                     <input type="text" name="title" class="input-field"
-                                                           placeholder="Enter Title">
+                                                placeholder="Enter Title" value="{{old('title')}}">
                                                     @if ($errors->has('title'))
                                                         <span class="error form-error-msg ">
                                                             <strong>{{ $errors->first('title') }}</strong>
@@ -66,7 +66,7 @@
                                             <div class="col-lg-8 col-lg-offset-2">
                                                 <div class="form-element margin-bottom-30">
                                                     <label><strong class="text-uppercase">Escrow Description :</strong></label>
-                                                    <textarea name="description" class="input-field form-control" rows="5"></textarea>
+                                                    <textarea name="description" value="{{old('description')}}" class="input-field form-control" rows="5"></textarea>
                                                 </div>
                                             </div>
 

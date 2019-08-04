@@ -86,21 +86,9 @@
                                                                 <i class="fab fa-facebook-messenger"></i>
                                                                 View Report
                                                             </a>
-                                                            <button data-toggle="modal" data-target="#release_button"
-                                                                    value="3"
-                                                                    data-id="{{$data->id}}"
-                                                                    class="release_button btn btn-primary btn-md btn-bottom-10">
-                                                                <i class="fa fa-money" aria-hidden="true"></i>
-                                                                Reject Amount
-                                                            </button>
+
                                                         @else
-                                                            <button data-toggle="modal" data-target="#release_button"
-                                                                    value="3"
-                                                                    data-id="{{$data->id}}"
-                                                                    class="release_button btn btn-primary btn-md btn-bottom-10">
-                                                                <i class="fa fa-money" aria-hidden="true"></i>
-                                                                Reject Amount
-                                                            </button>
+                                                          
                                                             <button data-toggle="modal" data-target="#report_button"
                                                                     value="3"
                                                                     data-id="{{$data->id}}"
@@ -108,9 +96,22 @@
                                                                 Admin Help
                                                             </button>
                                                         @endif
-
+                                                        <button data-toggle="modal" data-target="#reject_button"
+                                                            value="3"
+                                                            data-id="{{$data->id}}"
+                                                            class="reject_button btn btn-danger btn-md btn-bottom-10">
+                                                        <i class="fa fa-money" aria-hidden="true"></i>
+                                                        Reject
+                                                        </button>
+                                                        <button data-toggle="modal" data-target="#release_button"
+                                                        value="3"
+                                                            data-id="{{$data->id}}"
+                                                            class="release_button btn btn-primary btn-md btn-bottom-10">
+                                                        <i class="fa fa-money" aria-hidden="true"></i>
+                                                        Accept 
+                                                    </button>
                                                     @else
-                                                        -
+                                                   <span for="" class="label label-danger">Transaction Expired</span>
                                                     @endif
                                                 </td>
                                             </tr>
@@ -145,7 +146,7 @@
     <!-- get in touch area end -->
 
     <!-- Modal -->
-    <div class="modal fade" role="dialog" id="release_button">
+    <div class="modal fade" role="dialog" id="reject_button">
         <div class="modal-dialog">
             <!-- Modal content-->
             <div class="modal-content">
@@ -168,7 +169,28 @@
         </div>
     </div>
 
-
+    <div class="modal fade" role="dialog" id="release_button">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h3 class="modal-title"><i class="fas fa-hand-holding-usd"></i> Accept Amount </h3>
+                </div>
+                <div class="modal-body">
+                    <p>Are you sure to accept this Amount ?</p>
+                </div>
+                <div class="modal-footer">
+                    <form action="{{route('release.amount')}}" method="post">
+                        @csrf
+                        <input type="hidden" name="id" id="confirm_id_1">
+                        <button type="submit" id="confirm_accept" class="btn btn-success">Yes</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">No</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Modal -->
     <div class="modal fade" role="dialog" id="report_button">
@@ -204,7 +226,13 @@
 @section('js')
     <script>
         $(document).ready(function () {
-            $(document).on('click', '.release_button', function () {
+            $(document).on('click', '.release_button', function (e) {
+                e.preventDefault();
+                console.log($(this).data('id'))
+                var id = $(this).data('id');
+                $('#confirm_id_1').val(id);
+            });
+            $(document).on('click', '.reject_button', function () {
                 var id = $(this).data('id');
                 $('#confirm_id').val(id);
             });

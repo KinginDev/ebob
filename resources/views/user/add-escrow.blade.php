@@ -26,7 +26,7 @@
                                             <div class="form-element margin-bottom-30">
 
                                                 <label><strong class="text-uppercase">Escrow to:</strong></label>
-                                                <input type="text" name="username" class="input-field" placeholder="Type a valid Username">
+                                                <input type="text" name="username" class="input-field" placeholder="Type a valid Username" value="{{old('username')}}">
                                                 @if ($errors->has('username'))
                                                     <span class="error form-error-msg ">
                                                 <strong>{{ $errors->first('username') }}</strong>

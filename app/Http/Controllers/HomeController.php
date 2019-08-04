@@ -620,6 +620,37 @@ class HomeController extends Controller
         return back()->with('success', ' Release Successfully');
     }
 
+    public function acceptAmount(Request $request)
+    {
+        $request->validate([
+            'id' => 'required'
+        ]);
+        $basic = GeneralSettings::first();
+
+        $data = Milestone::find($request->id);
+
+        $user = User::find($data->user_id);
+        $user->balance += $data->amount;
+        $user->save();
+
+        $data->status = 1;
+        $data->save();
+
+        Trx::create([
+            'user_id' => $user->id,
+            'amount' => $data->amount,
+            'main_amo' => $user->balance,
+            'charge' => 0,
+            'type' => '+',
+            'title' => ' Escrow Amount Accepted from  ' . $data->creator->username,
+            'trx' => str_random(16)
+        ]);
+
+        $txt = 'Added money ' . $data->amount . ' ' . $basic->currency . '  from  ' . $data->creator->username or '';
+        send_email($user->email, $user->username, 'Escrow Amount Accepted from ' . $data->creator->username, $txt);
+        return back()->with('success', ' Accept Successfully');
+    }
+
     public function userReport(Request $request)
     {
         $request->validate([
