@@ -78,7 +78,7 @@
             <div class="col-lg-3 col-sm-12 col-md-3">
                 <a href="{{url('/')}}" class="logo">
                     {{-- <img src="{{asset('assets/images/logo/logo.png')}}" alt="logo"  class="max-logo-img"  style='max-width: 220px;'> --}}
-                    <h3 style="font-size:30px;>Genie<span style="color:#FBD161 !important;">Escrow</span></h1>
+                    <p style="font-size: 50px !important; font-weigth: bolder; font-family: 'Grenze', serif;">Genie<span style="color:#FBD161 !important;">Escrow</span></p>
                 </a>
             </div>
             <div class="col-lg-9 col-sm-12 col-md-9">
@@ -217,7 +217,7 @@
     </div>
     <div class="mobile-logo-wrapper disable-desktop">
         <a href="{{url('/')}}" class="logo">
-            <img src="{{asset('assets/images/logo/logo.png')}}" alt="logo"  style='max-width: 220px;'>
+            <p style="font-size: 50px !important; font-weigth: bolder; font-family: 'Grenze', serif;">Genie<span style="color:#FBD161 !important;">Escrow</span></p>
         </a>
     </div>
     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"

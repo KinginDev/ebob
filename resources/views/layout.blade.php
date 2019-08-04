@@ -211,7 +211,7 @@
     <div class="mobile-logo-wrapper disable-desktop">
         {{-- <a href="{{url('/')}}" class="logo">
             <img src="{{asset('assets/images/logo/logo.png')}}" alt="logo"  style='max-width: 220px;'> --}}
-            <h3>Genie<span style="color:#FBD161 !important;">Escrow</span></h3>
+            <p style="font-size: 50px !important; font-weigth: bolder; font-family: 'Grenze', serif;">Genie<span style="color:#FBD161 !important;">Escrow</span></p>
             </a>
     </div>
     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
