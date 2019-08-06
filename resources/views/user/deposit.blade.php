@@ -51,7 +51,7 @@
                                                 <br>
                                                 Charged {{ $gate->fixed_charge }} {{$basic->currency}} + {{ $gate->percent_charge }}
                                                 %</span>
-                                        </label>
+                                        </label>   
                                         <hr/>
                                         <div class="form-group">
 

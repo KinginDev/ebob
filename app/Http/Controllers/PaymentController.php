@@ -140,7 +140,7 @@ class PaymentController extends Controller
             $res = json_decode($all);
             $btcrate = $res->USD->last;
 
-            $usd = $data->usd;
+            $usd = $data->amount;
             $btcamount = $usd / $btcrate;
             $btc = round($btcamount, 8);
 
