@@ -23,9 +23,10 @@
                             </thead>
                             <tbody>
                             @foreach($withdrawLog as $data)
+                           
                                 <tr>
                                     <td>
-                                        <a href="{{route('user.single',$data->user->id)}}">
+                                      <a href="{{route('user.single',$data->user_id)}}">
                                             {{$data->user->username}}
                                         </a>
                                     </td>
